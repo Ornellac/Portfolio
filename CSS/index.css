@@ -1,5 +1,6 @@
 /*  font-family: 'Patrick Hand SC', cursive;     < Ecriture google font
-    font-family: 'Bebas Neue', cursive; */
+    font-family: 'Bebas Neue', cursive; 
+    font-family: 'Alumni Sans', sans-serif;  */
 
 /*todo_____________________________________________________________________ Mise en page générale  */
 
@@ -9,9 +10,16 @@
 
 /*todo_____________________________________________________________________ Mise en page du menu de navigation  */
 
-img {
+/* img {
     margin: auto 0;
     width: 100%;
+    margin-bottom: 5%;
+} */
+
+img.footernavimg{
+    margin: auto 0;
+    width: 100%;
+    margin-bottom: 1%;
 }
 
 ul {
@@ -26,7 +34,7 @@ a{
 }
 
 a:hover{
-    color: rgb(221, 205, 248);
+    color: rgb(204, 189, 230);
     cursor: pointer;
 }
 
@@ -82,7 +90,6 @@ nav > ul li:hover .sous {
 
 .sous a:hover {
     border-bottom: none;
-    background-color: rgba(200, 200, 200, 0.1);
 }
 
 .deroulant > a::after{
@@ -90,3 +97,39 @@ nav > ul li:hover .sous {
 }
 
 /*todo_____________________________________________________________________ Mise en page du body */
+
+/**__________ Page 1 (Scroll 1< Categorie "QUI JE SUIS") */
+
+.page1 .titre {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 28px;
+    margin-left: 2%;
+}
+
+.page1{
+    
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 30px;
+    margin-left: 2%;
+}
+
+/*todo_____________________________________________________________________ Mise en page du footer */
+
+footer{
+    margin-top: 2%;
+}
+
+.footerContenant {
+    position: relative;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(0, 0, 0);
+    font-size: clamp(0.5rem, 4vw, 1.6rem);      /*? Text responsif */
+}
+
+.textfooter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

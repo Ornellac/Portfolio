@@ -10,6 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./img/logo.gif">
     <link type="text/css" rel="stylesheet" href="./CSS/index.css">
     <title>Ornella Cuttaia Portfolio</title>
@@ -19,22 +24,35 @@
         <ul>
             <li class="deroulant"><a href='#'>A PROPOS</a>
                 <ul class="sous">
-                    <li><a>QUI JE SUIS</a></li>
-                    <li><a>MES PROJETS</a></li>
+                    <li><a href='#'>QUI JE SUIS</a></li>
+                    <li><a href='#'>MES ETUDES</a></li>
+                    <li><a href='#'>MES PROJETS</a></li>
                 </ul>
             </li>
-            <li><a href='#'>MES FORMATIONS</a></li>
+            <li class="deroulant"><a href='#'>MES FORMATIONS</a>
+                <ul class="sous">
+                    <li><a href='#'>METIER DE L'INFORMATIQUE</a></li>
+                    <li><a href='#'>DEVELOPPEUSE BACK END ORIENTE DATA</a></li>
+                </ul>
+            </li>
             <li><a href='#'>ME CONTACTER</a></li>
         </ul>
-        <img class=img.responsive src="./img/nav_1.bmp"/>
+        <img class="footernavimg" src="./img/nav_1.bmp"/>
     </nav>
 </header>
 
 <body>
-    
+    <div class="page1">
+        <a href="#"><img id="donutPage1" src="img/donut_hover.gif" onmouseover="this.src='img/donut1.gif'" onmouseout="this.src='img/donut_hover.gif'"></a><br>
+        <h1 class="titre"><span style="color: rgb(152, 141, 172);">Q</span>ui je suis ?</h1>
+        <p>Je m'appelle <span style="color: rgb(143, 134, 160);">Ornella</span> et j'ai 27 ans.<br> Je suis née le <span style="color: rgb(143, 134, 160);">16 juillet 1994</span> à Charleroi en Belgique.</p>
+    </div>
 </body>
 
 <footer>
-
+    <div class="footerContenant">
+        <img class="footernavimg" src="img/footer_.bmp">
+        <div class="textfooter"> Create by <br> © Ornella Cuttaia<br> <br>Make with <span style="color: rgb(204, 189, 230);">love</span> and <span style="color: rgb(204, 189, 230);">passion</span> 🖤 </div>
+    </div>
 </footer>
 </html>
