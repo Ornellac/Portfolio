@@ -106,7 +106,7 @@ nav > ul li:hover .sous {
 
 /**__________ Page 1 (Scroll 1< Categorie "QUI JE SUIS") */
 
-.page1 .titre {
+.titre {
     font-family: 'Bebas Neue', cursive;
     font-size: 28px;
     margin-left: 2%;
@@ -118,6 +118,7 @@ nav > ul li:hover .sous {
     font-size: 30px;
     margin-left: 2%;
 }
+
 /**__________ Page 2 (Scroll 2< Categorie "MES ETUDES") */
 
 .page2 {
@@ -126,8 +127,46 @@ nav > ul li:hover .sous {
     font-size: 30px;
     padding-left: 2%;
     margin-top: -1%;                 /*? YEP ! Trouvez pour retiré la ptite ligne blanche entre la banderole de separation et le début de la categorie grise ! */
+    margin-bottom: -2%;             /*?  Sens inverse ! Pour le bas < */ 
 }
 
+/**__________ Page 3 ( Categorie "MES PROJETS") */
+
+.page3{
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 30px;
+    margin-left: 2%;
+}
+
+/**__________ Page 4 ( Categorie "FORMATION : METIER INFORMATIQUE") */
+
+.page4{
+    background-color: rgb(228, 228, 228);
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 30px;
+    padding-left: 2%;
+    margin-top: -1%;
+    margin-bottom: -2%;
+}
+
+/**__________ Page 5 ( Categorie "FORMATION : DEV BACK END ORIENTE DATA") */
+
+.page5{
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 30px;
+    padding-left: 2%;
+}
+
+/**__________ Page 6 ( Categorie "Contacte") */
+
+.page6{
+    background-color: rgb(228, 228, 228);
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 30px;
+    padding-left: 2%;
+    margin-top: -1%;
+    margin-bottom: -2%;
+}
 
 /*todo_____________________________________________________________________ Mise en page du footer */
 
