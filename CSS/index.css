@@ -30,9 +30,6 @@ a:hover{
     cursor: pointer;
 }
 
-a:visited {
-    color: #81698f;
-}
 
 nav {
     text-align: center;
@@ -44,6 +41,52 @@ nav li {
     margin: 2%;
 	list-style: none; /* nécessaire pour IE7 */
 
+}
+/*?_________ Mise en page du menu de navigation _ LES SOUS MENU  */
+
+nav ul::after{
+    display: table;
+    clear: both;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px rgb(221, 205, 248);
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul li {
+    float: center;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav > ul li:hover .sous {
+    display: block;
+}
+
+.sous li {
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+.sous a {
+    padding: 10px;
+    border-bottom: none;
+}
+
+.sous a:hover {
+    border-bottom: none;
+    background-color: rgba(200, 200, 200, 0.1);
+}
+
+.deroulant > a::after{
+    font-size: 10px;
 }
 
 /*todo_____________________________________________________________________ Mise en page du body */
