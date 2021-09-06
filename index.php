@@ -110,8 +110,30 @@
     <div class="page6">
         <a href="#"><img class="donut" src="img/donut1.gif" onmouseover="this.src='img/donut_hover.gif'" onmouseout="this.src='img/donut1.gif'"></a> <span style="font-size:14px;">←</span> <span style="font-size:16px;">Appuis sur le donut pour revenir au menu de navigation.</span> <br>
         <h1 class="titre"><span style="color: rgb(152, 141, 172);">C</span>ontactez moi</h1>
-        
-        <a href="mailto:cuttaia.ornella@gmail.com">Ecrivez-moi</a>
+        <form method="post">
+        <label>Email</label>
+        <input type="email" name="email" required><br>
+        <label>Message</label>
+        <textarea name="message" required></textarea><br>
+        <input type="submit">
+    </form>
+    <?php
+    if (isset($_POST['message'])) {
+        $position_arobase = strpos($_POST['email'], '@');
+        if ($position_arobase === false)
+            echo '<p>Votre email doit comporter un arobase.</p>';
+        else {
+            $retour = mail('cuttaia.ornella@gmail.com', 'Envoi depuis la page Contact', $_POST['message'], 'From: ' . $_POST['email']);
+            if($retour)
+                echo '<p>Votre message a été envoyé.</p>';
+            else
+                echo '<p>Erreur.</p>';
+        }
+    }
+    ?>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque est explicabo, doloremque, id et dignissimos natus laborum dolore hic aspernatur molestiae vitae delectus quis, cumque aliquid obcaecati? Voluptatum, harum ex.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque est explicabo, doloremque, id et dignissimos natus laborum dolore hic aspernatur molestiae vitae delectus quis, cumque aliquid obcaecati? Voluptatum, harum ex.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque est explicabo, doloremque, id et dignissimos natus laborum dolore hic aspernatur molestiae vitae delectus quis, cumque aliquid obcaecati? Voluptatum, harum ex.</p>
     </div> 
 
     <img class="sep" src='./img/separation_grise_to_.bmp'> <!-- REFAIRE CAR DEPEND DU Nbre DE SECTION SI FINI GRIS OU SI FINI BLANC ! -->
