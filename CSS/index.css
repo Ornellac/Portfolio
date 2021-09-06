@@ -8,6 +8,12 @@
     scroll-behavior: smooth;
 }
 
+/*? Les separateuse < */
+.sep{
+    margin: auto 0;
+    width: 100%;
+}
+
 /*todo_____________________________________________________________________ Mise en page du menu de navigation  */
 
 /* img {
@@ -104,14 +110,24 @@ nav > ul li:hover .sous {
     font-family: 'Bebas Neue', cursive;
     font-size: 28px;
     margin-left: 2%;
+    text-align: center;
 }
 
 .page1{
-    
     font-family: 'Alumni Sans', sans-serif;
     font-size: 30px;
     margin-left: 2%;
 }
+/**__________ Page 2 (Scroll 2< Categorie "MES ETUDES") */
+
+.page2 {
+    background-color: rgb(228, 228, 228);
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 30px;
+    padding-left: 2%;
+    margin-top: -1%;                 /*? YEP ! Trouvez pour retiré la ptite ligne blanche entre la banderole de separation et le début de la categorie grise ! */
+}
+
 
 /*todo_____________________________________________________________________ Mise en page du footer */
 
